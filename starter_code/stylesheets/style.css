@@ -8,3 +8,93 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700%7CRoboto:100,300,700');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+    width: 100%;
+    font-family: Roboto;
+}
+img {
+    width: 100%;
+}
+nav {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+nav div ul {
+    display: flex;
+    flex-direction: row;
+    display: none;
+}
+div ul li {
+    list-style: none;
+}
+nav div img {
+    width: 15vw;
+    height: 4vh;
+}
+nav div > img {
+    width: 100%;
+}
+nav div button {
+    background-color: #540B51;
+    border: 0 ;
+    margin: 0 8px;
+}
+nav div button img {
+    background-color: #540B51;
+    width: 100%;
+}
+header {
+    background-color: #540B51;
+    padding-top: 20px;
+}
+header h1 {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+header p {
+    text-align: center;
+    color: white;
+}
+header div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header div p span {
+    color: #ECB12F;
+}
+
+header button {
+    width: 210px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+header button img {
+    width: 30px;
+    position:relative;
+    right: 24px;
+    background-color: white;
+}
+.bottonGoogle {
+    background-color: #4285F4;
+    color: white;
+}
