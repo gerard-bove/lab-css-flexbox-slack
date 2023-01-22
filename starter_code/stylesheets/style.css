@@ -15,14 +15,11 @@ footer links grey: #454245
   margin: 0;
 }
 body {
-    width: 100%;
     font-family: Roboto;
-}
-img {
-    width: 100%;
 }
 nav {
     background-color: #540B51;
+    padding: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,48 +36,52 @@ nav div ul {
 div ul li {
     list-style: none;
 }
-nav div img {
-    width: 15vw;
-    height: 4vh;
-}
-nav div > img {
-    width: 100%;
+body nav div > img {
+    width: 100px;
 }
 nav div button {
     background-color: #540B51;
-    border: 0 ;
+    border: 0;
     margin: 0 8px;
 }
 nav div button img {
     background-color: #540B51;
-    width: 100%;
+    width: 20px;
 }
 header {
     background-color: #540B51;
     padding-top: 20px;
+    width: 100%;
+    margin-right: 0;
+    overflow-x: hidden;
 }
 header h1 {
     color: white;
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 header p {
     text-align: center;
+    font-size: 0.8em;
     color: white;
+    padding: 10px 0;
 }
 header div div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-header div p span {
+header div p strong {
     color: #ECB12F;
+    font-weight: 500;
 }
 
 header button {
-    width: 210px;
-    height: 45px;
+    width: 250px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 0.7em;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,12 +90,401 @@ header button {
     border: none;
 }
 header button img {
-    width: 30px;
-    position:relative;
-    right: 24px;
+    width: 18px;
+    position: relative;
+    right: 18px;
     background-color: white;
 }
-.bottonGoogle {
+header div div button + button {
     background-color: #4285F4;
     color: white;
+    margin-bottom: 20px;
+}
+header div > img {
+    width: 480px;
+    position: relative;
+    right: 20px;
+}
+main {
+    background-color: #F3EAE2;
+    overflow-x: hidden;
+}
+main section p {
+    /* padding: 12px 0; */
+    font-size: 0.7em;
+    font-weight: 600;
+}
+main section > p {
+    padding: 12px 0;
+    text-align: center;
+    line-height: 15px;
+}
+#capital-letter {
+    text-transform: uppercase;
+} 
+
+main section div {
+    display: flex;
+   /*  justify-content: center; */
+    flex-wrap: wrap;
+}
+main section div img {
+    width: 70px;
+    padding: 10px;
+}
+main section div img + img {
+    width: 40px;
+}
+main section div img + img + img {
+    width: 55px;
+}
+main section div img + img + img + img {
+    width: 30px;
+}
+main section div img + img + img + img + img {
+    width: 130px;
+}
+main section div img + img + img + img + img + img {
+    width: 80px;
+}
+main section + section div img {
+    width: 300px;
+    padding: 15px 0;
+}
+main section + section div {
+    display: flex;
+}
+.image-align-left {
+    display: flex;
+    justify-content: left;
+}
+.image-align-rigth {
+    display: flex;
+    justify-content: right;
+}
+section h2 {
+    padding-left: 8px;
+    text-align: left;
+}
+section div p {
+    padding: 12px 0 12px 8px;
+    text-align: left;
+    line-height: 18px;
+}
+main section + section + section + section + section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h3 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.5em;
+}
+section a {
+    text-decoration: none;
+    color: #2E71A6;
+    padding: 12px 0 12px 8px;
+    font-weight: 600;
+    font-size: 0.7em;
+    text-align: left;
+}
+section button {
+    width: 250px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+section div {
+    display: flex;
+    justify-content: center;
+}
+main section + section + section + section + section div button {
+    color: white;
+    background-color: #540B51;
+}
+main section + section + section + section + section div button + button{
+    color: #540B51;
+    background-color: white;
+    border: 1px solid #540B51;
+}
+main section ul {
+    margin-top: 30px;
+    text-align: center;
+    list-style-type: none;
+    width: 100px;
+}
+main section ul li p {
+    font-size: 0.6em;
+}
+main section ul li p span {
+    font-size: 2.2em;
+    color: #540B51;
+}
+main section ul p + p {
+    padding: 10px 0 20px 0;
+}
+main section + section + section + section + section + section {
+    background-color: #540B51;
+    padding-bottom: 20px;
+}
+main section + section + section + section + section + section h3 {
+    padding: 25px 20px;
+    color: white;
+}
+main section + section + section + section + section + section button {
+    background-color: white;
+    color: #540B51;
+    border: 1px solid white;
+    font-weight: 300;
+}
+main section + section + section + section + section + section button + button {
+    background-color: #540B51;
+    color: white;
+}
+main section + section + section + section + section + section :nth-child(1) {
+    order: 1;
+}
+main section + section + section + section + section + section :nth-child(2) {
+    order: 3;
+}
+main section + section + section + section + section + section :nth-child(3) {
+    order: 2;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer img {
+    width: 40px;
+    padding: 20px 10px;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.6em;
+    line-height: 30px;
+    font-weight: bold;
+}
+footer div ul {
+    padding: 0 10px;
+}
+footer div ul li ~ li {
+    font-weight: lighter;
+}
+footer :nth-child(1) {
+    order: 1;
+}
+footer :nth-child(2) {
+    order: 2;
+}
+footer :nth-child(3) {
+    order: 4;
+}
+footer :nth-child(4) {
+    order: 3;
+}
+footer :nth-child(5) {
+    order: 5;
+}
+footer :nth-child(6) {
+    order: 6;
+}
+footer hr {
+    margin: 20px 10px;
+}
+footer > ul {
+    margin-left: 10px;
+    font-size: 0.6em;
+    line-height: 30px;
+    list-style-type: none;
+    font-weight: bold;
+}
+footer > ul li + li + li + li + li + li {
+    list-style-image: url('../images/icon-region.png');
+    margin-left: 20px;
+}
+footer > ul li + li + li + li + li + li + li {
+    list-style-image: url('../images/icon-download.png');
+    color: #4285F4;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div small {
+    line-height: normal;
+    padding: 15px;
+    color: #454245;
+    font-weight: lighter;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    main section + section div img {
+        content:url("../images/connectedness.png");
+        width: 450px;
+    }
+    main section + section + section div img {
+        content:url("../images/flexibility.png");
+        width: 450px;
+    }
+    main section + section + section + section div img {
+        content:url("../images/speed.png");
+        width: 450px;
+    }
+    main section + section div + div {
+        display: flex;
+        justify-content: center;
+    }
+    main section + section div h2,
+    main section + section div p,
+    main section + section div a {
+        width: 400px;
+    }
+    main section + section + section + section + section div button {
+        margin: 15px;
+    }
+    main section + section + section + section + section > ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    main section + section + section + section + section > ul li {
+        margin: 0 25px;
+        width: 200px;
+    }
+    footer div {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer > ul {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .social-media {
+        display: flex;
+        justify-content: left;
+    }
+    .social-media li {
+        padding: 15px 40px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    nav div ul {
+        padding-left: 20px;
+        display: list-item;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav div ul li {
+        width: 120px;
+        font-size: 0.7em;
+    }
+    nav div ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    #menu {
+        display: none;
+    }
+    /* nav div + div ul {
+        
+    } */
+    nav div + div ul li {
+        width: 110px;
+        color: white;
+        text-align: center;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav div + div ul li + li {
+        background-color: white;
+        font-weight: bold;
+        font-size: 0.6em;
+    }
+    nav div + div ul li + li a {
+        text-transform: uppercase;
+        color: #540B51;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30px;
+    }
+    main section + section div img {
+        content:url("../images/connectedness.png");
+        width: 450px;
+    }
+    main section + section + section div img {
+        content:url("../images/flexibility.png");
+        width: 450px;
+    }
+    main section + section + section + section div img {
+        content:url("../images/speed.png");
+        width: 450px;
+    }
+    main section + section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* display: flex; */
+        align-items: center;
+    }
+    main section + section div + div {
+        width: 500px;
+        height: 100px;     
+    }
+    main section + section + section {
+        flex-direction: row-reverse;
+    }
+    main section + section + section + section {
+        flex-direction: row;
+    }
+    main section + section + section + section + section ul {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main section + section + section + section + section span {
+        font-size: 2.6em;
+    }
+    main section + section + section + section + section ul li p {
+        width: 130px;
+        justify-content: space-around;
+    }
+    footer div {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer > ul {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .social-media {
+        display: flex;
+        justify-content: left;
+    }
+    .social-media li {
+        padding: 15px 40px;
+    }
 }
